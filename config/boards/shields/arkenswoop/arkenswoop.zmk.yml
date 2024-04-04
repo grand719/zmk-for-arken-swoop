@@ -1,0 +1,13 @@
+file_format: "1"
+id: arkenswoop
+name: arkenswoop
+type: shield
+url: https://github.com/SuperFola/arkenswoop
+requires: [pro_micro]
+exposes: []
+features:
+  - keys
+  - encoders
+siblings:
+  - arkenswoop_left
+  - arkenswoop_right
