@@ -72,10 +72,10 @@
         functional {
             label = "FUNCTIONAL";
             bindings = <
-&kp F1           &kp F2       &kp F3        &kp F4  &kp F5          &kp F6     &kp F7     &kp F8    &kp F9   &kp F10
-&kp F11          &kp F12      &trans        &trans  &trans          &kp LBKT   &kp RBKT   &kp LT    &kp GT   &trans
-&bt BT_CLR_ALL   &bt BT_NXT   &bt BT_PRV    &trans  &trans          &kp LBRC   &kp RBRC   &kp LPAR  &kp RPAR &trans
-                              &trans        &kp ESC &kp SPACE       &kp TAB    &trans     &trans
+&kp F1           &kp F2       &kp F3        &kp F4         &kp F5          &kp F6     &kp F7     &kp F8    &kp F9   &kp F10
+&kp F11          &kp F12      &trans        &trans         &trans          &kp LBKT   &kp RBKT   &kp LT    &kp GT   &trans
+&bt BT_CLR_ALL   &bt BT_NXT   &bt BT_PRV    &bt BT_CLR     &trans          &kp LBRC   &kp RBRC   &kp LPAR  &kp RPAR &trans
+                              &trans        &kp ESC        &kp SPACE       &kp TAB    &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp RIGHT LEFT>;
