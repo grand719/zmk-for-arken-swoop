@@ -55,40 +55,37 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp UP DOWN>;
         };
 
-        number {
-            label = "NUMBER";
+        functional {
+            label = "FUNCTIONAL";
             bindings = <
-&kp N1     &kp N2     &kp N3    &kp N4     &kp N5          &kp N6            &kp N7     &kp N8     &kp N9    &kp N0
-&kp EQUAL  &kp MINUS  &kp UP    &kp GT     &kp LEFT_GUI    &kp RIGHT_GUI     &kp BSPC   &kp COMMA  &kp SQT   &kp BACKSLASH
-&kp GRAVE  &kp LEFT   &kp DOWN  &kp RIGHT  &kp LEFT_ALT    &kp RIGHT_ALT     &kp SLASH  &kp LBKT   &kp RBKT  &kp RIGHT_SHIFT
-                      &trans    &trans     &kp SPACE       &kp LEFT_CONTROL  &kp TAB    &to 3
+&kp ESCAPE  &kp N2     &kp N3    &kp N4     &kp N5          &kp N6            &kp N7     &kp N8     &kp N9    &kp N0
+&kp EQUAL   &kp MINUS  &kp UP    &kp GT     &kp LEFT_GUI    &kp RIGHT_GUI     &kp BSPC   &kp COMMA  &kp SQT   &kp BACKSLASH
+&kp GRAVE   &kp LEFT   &kp DOWN  &kp RIGHT  &kp LEFT_ALT    &kp RIGHT_ALT     &kp SLASH  &kp LBKT   &kp RBKT  &kp RIGHT_SHIFT
+                       &trans    &trans     &kp SPACE       &kp LEFT_CONTROL  &kp TAB    &to 0
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN &inc_dec_kp RIGHT LEFT>;
         };
 
-        functional {
-            label = "FUNCTIONAL";
+        number {
+            label = "NUMBER";
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EQUAL      &kp MINUS        &kp BACKSPACE
-&kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LEFT_BRACE        &kp RIGHT_BRACE          &kp LEFT_ARROW    &kp DOWN_ARROW     &kp UP_ARROW   &kp RIGHT_ARROW  &trans
-&kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0          &kp GRAVE                &kp PLUS          &kp UNDERSCORE     &kp BACKSLASH  &kp RPAR         &trans
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EQUAL     &kp MINUS        &kp BACKSPACE
+&kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LEFT_BRACE        &kp RIGHT_BRACE          &kp LEFT_ARROW    &kp DOWN_ARROW     &kp UP_ARROW  &kp RIGHT_ARROW  &trans
+&kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0          &kp GRAVE                &kp PLUS          &kp UNDERSCORE     &kp FSLH      &kp BACKSLASH    &trans
                             &trans        &kp LALT              &trans                   &trans            &trans             &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp RIGHT LEFT>;
         };
 
-        gaming {
-            label = "GAMING";
+        layer_3 {
             bindings = <
-&kp TAB           &kp N1  &kp N2  &kp N3          &kp N4       &kp N5     &kp N6    &kp N7    &kp N8     &kp N9
-&kp LEFT_SHIFT    &kp Q   &kp W   &kp E           &kp R        &kp F      &kp I     &kp UP    &kp O      &kp H
-&kp LEFT_CONTROL  &kp A   &kp S   &kp D           &kp G        &kp B      &kp LEFT  &kp DOWN  &kp RIGHT  &kp M
-                          &trans  &mt C LEFT_ALT  &kp SPACE    &kp ENTER  &kp ESC   &to 0
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans    &trans  &trans  &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp RIGHT LEFT>;
         };
     };
 };
